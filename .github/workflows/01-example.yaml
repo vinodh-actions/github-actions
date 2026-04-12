@@ -3,7 +3,7 @@ name: Helloworld
 on: [push]  #this is like triggers 
 jobs: #pipeline , one workflow have multiple pipelines 
   hello:
-     runs-on: ubuntu-latests
+     runs-on: ubuntu-latest
      steps: #stages 
        - name: step1 
          run: echo "hello world"

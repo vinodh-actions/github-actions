@@ -5,9 +5,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: step1(Code-Checkout)
+        if: github.ref == 'refs/heads/feature-**'
         run: echo "code-Checkout-dones"
       - name: step2(Code-Qulity-Checks)
+        if: github.ref == 'refs/heads/feature-**'
         run: echo "checking-code-Qulity"
       - name: step3(BUILD)
+        if: github.ref == 'refs/heads/feature-**'
         run: echo "Build the code"
         

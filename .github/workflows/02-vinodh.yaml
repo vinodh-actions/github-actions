@@ -5,8 +5,11 @@ jobs: # Pipeline
     runs-on: ubuntu-latest # like os where this workflow should run
     steps: #  like stages 
       - name: step1 
+        if: github.ref == 'refs/heads/feature-**'
         run: echo "hello vinodh"
       - name: step2
+        if: github.ref == 'refs/heads/feature-**'
         run: echo "Welcome to Github Actions vinodh"
       - name: step3
+        if: github.ref == 'refs/heads/feature-**'
         run: echo "This second workflow"

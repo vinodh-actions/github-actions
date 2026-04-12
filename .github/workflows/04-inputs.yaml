@@ -27,7 +27,7 @@ jobs:
   InputsForGA:
     runs-on: ubuntu-latest
     steps:
-      - name: Print the inputs tags to SDTOUT
+      - name: Print the input tags to SDTOUT
         run: echo run the triggers are ${{ inputs.tags }}
       - name: Print the Environment
         run: echo run the environment are ${{ inputs.environment }}

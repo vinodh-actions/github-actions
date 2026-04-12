@@ -1,6 +1,24 @@
-name: ApplicationDeployment
-on: [push]
-jobs: 
+# name: ApplicationDeployment
+# on: [push]
+# jobs: 
+#   ApplicationDeployment:  #job name
+#     runs-on: ubuntu-latest
+#       - name: step1-Code Check-out
+#         run: echo "code check-out form Github-Done-Sucessfully"
+#       - name: step2-Code quality checks
+#         run: echo "Code quality check done: By Sonar Qube Scanner"
+#       - name: step3-Build 
+#         run: echo "Code build done: By Maven"
+#       - name: step4-Docker Image
+#         run: echo "Creating a Docekr Image"
+#       - name: step5-Image Push 
+#         run: step6-echo "Image pushed to ECR repo" 
+#       - name: step7-deployment
+#         run: echo "deploying on K8"
+
+name: MyFristGithubWorkFlow  # workflow name
+on: [push] # when this workflow shoud run
+jobs: # Pipeline
   ApplicationDeployment:  #job name
     runs-on: ubuntu-latest
     steps:
@@ -9,13 +27,7 @@ jobs:
       - name: step2-Code quality checks
         run: echo "Code quality check done: By Sonar Qube Scanner"
       - name: step3-Build 
-        run: echo "Code build done: By Maven"
-      - name: step4-Docker Image
         run: echo "Creating a Docekr Image"
-      - name: step5-Image Push 
-        run: step6-echo "Image pushed to ECR repo" 
-      - name: step7-deployment
-        run: echo "deploying on K8"
 
 
 

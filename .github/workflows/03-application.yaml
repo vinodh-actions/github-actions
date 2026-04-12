@@ -6,3 +6,8 @@ jobs:
     steps:
       - name: step1(Code-Checkout)
         run: echo "code-Checkout-dones"
+      - name: step2(Code-Qulity-Checks)
+        run: echo "checking-code-Qulity"
+      - name: step3(BUILD)
+        run: echo "Build the code"
+        

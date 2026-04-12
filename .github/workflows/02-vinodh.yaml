@@ -1,0 +1,13 @@
+name: MyFristGithubWorkFlow 
+on: [push]
+jobs:
+  vinodh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo "hello vinodh"
+      - name: step2
+        run: echo "Welcome to Github Actions vinodh"
+      - name: step3
+        run: echo "This second workflow"
+        

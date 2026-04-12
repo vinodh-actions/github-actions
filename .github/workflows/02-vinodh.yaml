@@ -1,13 +1,12 @@
-name: MyFristGithubWorkFlow 
-on: [push]
-jobs:
-  vinodh:
-    runs-on: ubuntu-latest
-    steps:
-      - name: step1
+name: MyFristGithubWorkFlow  # workflow name
+on: [push] # when this workflow shoud run
+jobs: # Pipeline
+  vinodh: # job name
+    runs-on: ubuntu-latest # like os where this workflow should run
+    steps: #  like stages 
+      - name: step1 
         run: echo "hello vinodh"
       - name: step2
         run: echo "Welcome to Github Actions vinodh"
       - name: step3
         run: echo "This second workflow"
-        

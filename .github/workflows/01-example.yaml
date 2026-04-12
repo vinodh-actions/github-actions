@@ -1,15 +1,16 @@
 #simple workflow 
 
 name: Helloworld 
-# Here on means when to trigger this pipeline we can tigger on push or some manula events like ( creating PR, updating PR, creating branches )
-on: [push]  # this is like triggers 
+#Here ON means when to trigger this pipeline we can tigger on push or some manula events like ( creating PR, updating PR, creating branches )
+on: [push]  #this is like triggers 
 jobs: #pipeline , one workflow have multiple pipelines 
   hello:
-    runs_on: ubuntu-latest # where this job runs ( runners like operating systesms)
-    steps: #stages 
+     runs-on: ubuntu-latests
+     steps: #stages 
       - name: step1 
         run: echo "hello world"
       - name: step2
         run: echo "hello Github Actions"
+
 
 

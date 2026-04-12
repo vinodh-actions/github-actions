@@ -1,0 +1,31 @@
+name: Dependency
+on: [push]
+jobs: 
+  # Job1 and job4 parllel 
+  job-1: # pipeline -1 ( names should be unique)
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo "Hi ,Hello Iam from Job-1"
+  
+  job-2: # Pipeline -2 
+
+    # job-2 and job-3  has dependecy 
+    needs: job-1
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo "Hi , Hello Iam form Job-2"
+
+  job-3: # Pipeline -3
+    needs: job-2
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo "Hi , Hello Iam form Job-3"     
+  
+  job-4: # Pipeline -4
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo "Hi , Hello Iam form Job-4"

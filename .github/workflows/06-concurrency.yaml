@@ -13,3 +13,5 @@ jobs:
         run: sleep 20 
       - name: step2
         run: sleep 30 
+      - name: step2
+        run: sleep 30 

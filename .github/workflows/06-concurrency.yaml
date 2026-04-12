@@ -1,0 +1,13 @@
+name: Concurrency # It means at a time  only one person should run this pipeline
+on: [push] # Triggers
+concurrency: 
+  # This workflow should be triggered for any branch only 
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true # it means existing will cancel and latest will run 
+
+jobs: 
+  Concurrency:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: step1
+        run: sleep 20 

@@ -1,0 +1,20 @@
+name: Parllel 
+on: [push]
+jobs: 
+  job-1: # pipeline -1 ( names should be unique)
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo "Hi ,Hello Iam from Job-1"
+  
+  job-2: # Pipeline -2 
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo "Hi , Hello Iam form Job-2"
+
+  job-3: # Pipeline -3
+    runs-on: ubuntu-latest
+    steps:
+      - name: step1
+        run: echo "Hi , Hello Iam form Job-3"     

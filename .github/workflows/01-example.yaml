@@ -1,6 +1,6 @@
 name: Helloworld 
 #  Here ON means when to trigger this pipeline we can tigger on push or some manula events like ( creating PR, updating PR, creating branches )
-on: [pull]  #this is like triggers 
+on: [push]  #this is like triggers 
 jobs: #pipeline , one workflow have multiple pipelines 
   hello:
      runs-on: ubuntu-latest

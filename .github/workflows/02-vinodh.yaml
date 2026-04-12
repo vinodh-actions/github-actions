@@ -1,5 +1,5 @@
 name: MyFristGithubWorkFlow  # workflow name
-on: [pull] # when this workflow shoud run
+on: [push] # when this workflow shoud run
 jobs: # Pipeline
   vinodh: # job name
     runs-on: ubuntu-latest # like os where this workflow should run

@@ -1,0 +1,14 @@
+name: Conditions
+on: [push]
+jobs:
+  ConditionsWhenThisJobRun:
+    runs-on: ubuntu-latest
+    steps:
+      - name: When Branch is Feature then its Should trigger
+        if: github.ref == 'refs/heads/feature-**'
+        run: echo "feature Branch is Running"
+      - name: When Branch is Main then its Should trigger
+        if: github.ref == 'refs/heads/main'
+        run: echo "main Branch is Running"
+   
+   

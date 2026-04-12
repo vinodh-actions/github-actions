@@ -30,4 +30,4 @@ jobs:
       - name: Print the input tags to SDTOUT
         run: echo The tags are ${{ inputs.tags }}
       - name: Print the Environment
-        run: echo The tags are ${{ inputs.environment }}
+        run: echo The Environments are ${{ inputs.environment }}

@@ -1,9 +1,9 @@
-name: Helloworld 
-#  Here ON means when to trigger this pipeline we can tigger on push or some manula events like ( creating PR, updating PR, creating branches )
+name: Helloworld  # workflow name 
+#  Here ON means when to trigger this pipeline we can tigger on push or some manual events like ( creating PR, updating PR, creating branches )
 on: [push]  #this is like triggers 
 jobs: #pipeline , one workflow have multiple pipelines 
   hello:
-     runs-on: ubuntu-latest
+     runs-on: ubuntu-latest # By default github  os 
      steps: #stages 
        - name: step1 
          if: github.ref == 'refs/heads/feature-**'

@@ -1,0 +1,14 @@
+name: Selfhosted  # workflow name
+
+on: [push]  
+jobs: 
+  Selfhosted:
+     runs-on: self-hosted # crerated a self hosted runner 
+     steps: #stages 
+       - name: step1 
+         run: echo "Self-Hosted-Runner"
+       - name: step2
+         run: echo "hello Github Actions"
+
+
+

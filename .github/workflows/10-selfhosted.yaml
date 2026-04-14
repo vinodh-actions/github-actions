@@ -3,7 +3,7 @@ name: Selfhosted  # workflow name
 on: [push]  
 jobs: 
   hello:
-     runs-on: self-hosted # crerated a self hosted runner 
+     runs-on: [self-hosted, linux] # crerated a self hosted runner 
      steps: #stages 
        - name: step1 
          run: echo "Self-Hosted-Runner"

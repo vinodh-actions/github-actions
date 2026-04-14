@@ -2,7 +2,7 @@ name: Selfhosted  # workflow name
 
 on: [push]  
 jobs: 
-  Selfhosted:
+  hello:
      runs-on: self-hosted # crerated a self hosted runner 
      steps: #stages 
        - name: step1 
